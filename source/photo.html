@@ -5,123 +5,102 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header photo-header">
-      <a class="page-header__logo">
-            <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта туристического городка Sedona">
+    <header class="header">
+      <a class="logo">
+            <img class="logo__image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта туристического городка Sedona">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--close"><a href="#">главная</a></li>
+        <ul class="main-nav__list">
+          <li class="site-list__item"><a href="#">главная</a></li>
           <li class="site-list__item"><a href="#">фото и видео</a></li>
           <li class="site-list__item"><a href="#">форма отзыва</a></li>
           <li class="site-list__item"><a href="#">HTML Academy</a></li>
-          <li class="site-list__item site-list__item--wrapper"></li>
         </ul>
       </nav>
       </header>
 
       <h1 class="visually-hidden">Фото и видео Седоны, что бы вы могли решиться</h1>
 
-      <section class="presetation photo-presetation">
+      <section class="promo">
         <h2 class="visually-hidden">Презентация городка Седона</h2>
-        <span class="presetation__mask photo-mask"></span>
+        <img src="http://placehold.it/229x40" width="229" height="40" alt="Sedona">
       </section>
 
 
       <section class="photo-video">
-        <header class="photo-video__header">
           <h2 class="photo-video__header-title">Фото и видео</h2>
           <p class="photo-video__header-slogan">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </header>
-        <ul class="photo-video__list">
-          <li class="photo-video__item">
-            <div class="photo-video__img">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
-            </div>
-            <p class="photo-video__img-title">Неродные просторы</p>
-            <p class="photo-video__img-autor">Автор фото: Борис</p>
-            <div class="photo-video__like">
-              <span class="photo-video__like-icon"></span>
-              <p class="photo-video__like-number">1350</p>
-            </div>
-
-          </li>
-          <li class="photo-video__item">
-            <div class="photo-video__img">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
-            </div>
-            <p class="photo-video__img-title">Местная растительность</p>
-            <p class="photo-video__img-autor">Автор фото: Сергей</p>
-            <div class="photo-video__like">
-              <span class="photo-video__like-icon"></span>
-              <p class="photo-video__like-number">143</p>
-            </div>
-
-          </li>
-          <li class="photo-video__item">
-            <div class="photo-video__img">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
-            </div>
-            <p class="photo-video__img-title">Дорога на север</p>
-            <p class="photo-video__img-autor">Автор фото: Петр</p>
-            <div class="photo-video__like">
-              <span class="photo-video__like-icon"></span>
-              <p class="photo-video__like-number">96</p>
-            </div>
-
-          </li>
-          <li class="photo-video__item">
-            <div class="photo-video__img">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Мост Дьявола">
-            </div>
-            <p class="photo-video__img-title">Мост Дьявола</p>
-            <p class="photo-video__img-autor">Автор фото: Антон</p>
-            <div class="photo-video__like">
-              <span class="photo-video__like-icon"></span>
-              <p class="photo-video__like-number">254</p>
-            </div>
-
-          </li>
-          <li>
-            <b class="photo-video__header-title title-video">Все еще сомневаетесь?</b>
-            <p class="photo-video__header-slogan slogan-video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-            </p>
-            <div class="photo-video__video">
-
-            </div>
-
-          </li>
-
-
-
-
-        </ul>
-
-
-
       </section>
+      <ul class="gallary">
+          <li class="gallary__item">
+            <img class="gallary__img" src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
+            <p class="gallary__img-title">Неродные просторы</p>
+            <p class="gallary__img-autor">Автор фото: Борис</p>
+            <div class="gallary__like">
+              <span class="gallary__icon"></span>
+              <p class="gallary__number">1350</p>
+            </div>
+
+          </li>
+          <li class="gallary__item">
+            <img class="gallary__img" src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
+            <p class="gallary__img-title">Местная растительность</p>
+            <p class="gallary__img-autor">Автор фото: Сергей</p>
+            <div class="gallary__like">
+              <span class="gallary__icon"></span>
+              <p class="gallary__number">143</p>
+            </div>
+
+          </li>
+          <li class="gallary__item">
+            <img class="gallary__img" src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
+            <p class="gallary__img-title">Дорога на север</p>
+            <p class="gallary__img-autor">Автор фото: Петр</p>
+            <div class="gallary__like">
+              <span class="gallary__icon"></span>
+              <p class="gallary__number">96</p>
+            </div>
+
+          </li>
+          <li class="gallary__item">
+            <img class="gallary__img" src="http://placehold.it/280x280" width="280" height="280" alt="Мост Дьявола">
+            <p class="gallary__img-title">Мост Дьявола</p>
+            <p class="gallary__img-autor">Автор фото: Антон</p>
+            <div class="gallary__like">
+              <span class="gallary__icon"></span>
+              <p class="gallary__number">254</p>
+            </div>
+
+          </li>
+        </ul>
+        <section class="video">
+            <b class="video__header-title">Все еще сомневаетесь?</b>
+            <p class="video__header-slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
+            <div class="video__video">
+
+            </div>
+        </section>
 
 
-      <footer class="page-footer">
+     <footer class="footer">
         <p>#visitsedona</p>
-        <div class="page-footer__social">
-          <ul class="social__list">
-            <li class="social__item">
+        <ul class="social-list">
+            <li class="social-list__item">
               <a class="social__link social__link--twitter" href="https://twitter.com">Твитер</a>
             </li>
-            <li class="social__item">
+            <li class="social-list__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
             </li>
-            <li>
+            <li class="social-list__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com">Ютуб</a>
             </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
+        </ul>
+        <div class="copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+        </div>
       </footer>
 
 
