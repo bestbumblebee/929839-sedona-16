@@ -15,59 +15,50 @@
 @import "picture.less";
 @import "video.less";
 
-
-
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-
   background-color: #ffffff;
-
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /* Стилизация блочков */
 
 body > * {
-    border: 2px solid red;
-    background-color: rgba(0,255,255,0.5);
+  border: 2px solid red;
+  background-color: rgba(0, 255, 255, 0.5);
+}
 
-  }
+body > * > * {
+  border: 2px solid blue;
+}
 
-  body > * > * {
-    border: 2px solid blue;
+body > * > * > * {
+  border: 2px solid yellow;
+}
 
-  }
+body > * > * > * > * {
+  border: 2px solid green;
+}
 
-  body > * > * > * {
-    border: 2px solid yellow;
-
-  }
-
-  body > * > * > * > * {
-    border: 2px solid green;
-
-  }
-
-  a {
-text-decoration: none;
-list-style: none;
+a {
+  text-decoration: none;
+  list-style: none;
 }
 
 img {
@@ -79,18 +70,13 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
