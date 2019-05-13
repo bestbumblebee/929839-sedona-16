@@ -3,19 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <div class="container">
     <header class="header">
       <a class="logo">
-            <img class="logo__image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта туристического городка Sedona">
+            <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта туристического городка Sedona">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-list__item"><a href="#">главная</a></li>
-          <li class="main-list__item"><a href="#">фото и видео</a></li>
-          <li class="main-list__item"><a href="#">форма отзыва</a></li>
-          <li class="main-list__item"><a href="#">HTML Academy</a></li>
+          <li class="main-list__item">
+            <a class="main-nav__link" href="#">главная</a>
+          </li>
+          <li class="main-list__item">
+            <a class="main-nav__link" href="#">фото и видео</a>
+          </li>
+          <li class="main-list__item">
+            <a class="main-nav__link" href="#">форма отзыва</a>
+          </li>
+          <li class="main-list__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
         </ul>
       </nav>
       </header>
@@ -24,7 +35,7 @@
       <h1 class="visually-hidden">Седона Туристический городок в штате Аризона</h1>
       <section class="promo">
         <h2 class="visually-hidden">Презентация городка Седона</h2>
-        <img class="promo-img" src="http://placehold.it/282x214" width="282" height="214" alt="Welcome Sedona">
+        <img class="promo-img" src="img/text-sedona-index.svg" width="282" height="214" alt="Welcome Sedona">
       </section>
       <section class="reasons">
         <h2 class="visually-hidden">Причины поехать в Седону</h2>
@@ -34,11 +45,13 @@
           <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
           <div class="reasons__block">
+            <div class="reasons__inner">
             <p class="reasons__title">Настоящий городок</p>
             <span class="reasons__number">— №1 —</span>
             <p class="reasons__slogan">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <div class="reasons__picture">
-             <img src="http://placehold.it/320x260" width="320" height="260" alt="картинка городка Седона">
+            <img class="reasons__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="картинка городка Седона">
             </div>
           </div>
           <ul class="prefers">
@@ -47,20 +60,22 @@
                 <p class="prefers__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="prefers__item">
-                <p class="prefers__head">Еда</p>
-                <p class="prefers__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="prefers__item">
                 <p class="prefers__head">Сувениры</p>
                 <p class="prefers__description">Не только китайского, но и местного производства!</p>
             </li>
+            <li class="prefers__item">
+                <p class="prefers__head">Еда</p>
+                <p class="prefers__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
           </ul>
           <div class="reasons__block">
+            <div class="reasons__inner">
             <p class="reasons__title">Там есть мост дьявола</p>
             <span class="reasons__number">— №2 —</span>
             <p class="reasons__slogan">Да, по нему можно пройти! Если конечно вы осмелитесь, конечно</p>
+            </div>
             <div class="reasons__picture">
-             <img src="http://placehold.it/320x260" width="320" height="260" alt="картинка каньона">
+            <img class="reasons__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="картинка каньона">
             </div>
           </div>
           <ul class="reasons__list">
@@ -86,21 +101,31 @@
         <form></form>
       </section>
       <section class="map">
-
+        <img src="img/bg-map-mobile@1x.jpg" width="320px" height="350px" alt="Карта городка Седона">
       </section>
       </main>
 
       <footer class="footer">
-        <p>#visitsedona</p>
+        <p class="footer__visit">#visitsedona</p>
         <ul class="social-list">
             <li class="social-list__item">
-              <a class="social-list__link social__link--twitter" href="https://twitter.com">Твитер</a>
+              <a class="social-list__link social__link--twitter" href="https://twitter.com">
+                <span class="visually-hidden">Твитер</span>
+
+
+              </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+              <a class="social-list__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+
+              </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social__link--youtube" href="https://www.youtube.com">Ютуб</a>
+              <a class="social-list__link social__link--youtube" href="https://www.youtube.com">
+                <span class="visually-hidden">Ютуб</span>
+
+              </a>
             </li>
         </ul>
         <div class="copyright">
@@ -108,6 +133,6 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </footer>
-
+      </div>
     </body>
 </html>

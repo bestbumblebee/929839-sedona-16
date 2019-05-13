@@ -1,0 +1,82 @@
+@import "container.less";
+@import "header.less";
+@import "logo.less";
+@import "main-nav.less";
+@import "page-main.less";
+@import "promo.less";
+@import "reasons.less";
+@import "prefers.less";
+@import "map.less";
+@import "footer.less";
+@import "social-list.less";
+@import "copyright.less";
+@import "photo-video";
+@import "gallary";
+@import "picture.less";
+@import "video.less";
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Стилизация блочков */
+
+body > * {
+  border: 2px solid red;
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+body > * > * {
+  border: 2px solid blue;
+}
+
+body > * > * > * {
+  border: 2px solid yellow;
+}
+
+body > * > * > * > * {
+  border: 2px solid green;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
