@@ -8,22 +8,56 @@
 
   .prefers__item {
     text-align: left;
+  }
 
-    .prefers__head,
-    .prefers__description {
-      margin: 0;
-      padding: 0;
+  .prefers__head,
+  .prefers__description {
+    margin: 0;
+    padding: 0;
+  }
+
+  .prefers__head {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 40px;
+  }
+
+  .prefers__description {
+    margin-top: 25px;
+  }
+
+}
+@media (min-width: @tablet-width) {
+  .prefers {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    .prefers__item {
+      text-align: center;
+      width: 33%;
+      padding-top: 163px;
+      padding-left: 46px;
+      padding-right: 45px;
+      padding-bottom: 65px;
+
     }
-
     .prefers__head {
-      font-size: 18px;
-      line-height: 26px;
-      font-weight: 700;
-      margin-top: 40px;
-    }
+     margin: 0;
+     margin-bottom: 30px;
+     }
+     .prefers__description {
+     margin: 0;
+   }
 
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prefers {
     .prefers__description {
-      margin-top: 25px;
+      margin-bottom: 88px;
     }
   }
 }

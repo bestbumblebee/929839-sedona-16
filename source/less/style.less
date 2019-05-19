@@ -1,3 +1,4 @@
+@import "variables.less";
 @import "container.less";
 @import "header.less";
 @import "logo.less";
@@ -26,9 +27,9 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: @black;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: @white;
 }
 
 *,
@@ -40,20 +41,24 @@ body {
 /* Стилизация блочков */
 
 body > * {
-  border: 2px solid red;
+  box-shadow: inset 0 0 2px red;
   background-color: rgba(0, 255, 255, 0.5);
 }
 
 body > * > * {
-  border: 2px solid blue;
+  box-shadow: inset 0 0 2px blue;
 }
 
 body > * > * > * {
-  border: 2px solid yellow;
+  box-shadow: inset 0 0 2px yellow;
 }
 
 body > * > * > * > * {
-  border: 2px solid green;
+  box-shadow: inset 0 0 2px green;
+}
+
+body > * > * > * > * > * {
+  box-shadow: inset 0 0 2px black;
 }
 
 a {

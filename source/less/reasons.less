@@ -20,11 +20,9 @@
     margin-top: 38px;
   }
 }
-
-.reasons__block {
-  padding-top: 42px;
-  background-color: #81b3d2;
-  color: #ffffff;
+  .reasons__inner {
+    padding: 42px 25px;
+  }
 
   .reasons__title,
   .reasons__slogan {
@@ -36,17 +34,29 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+    margin-bottom: 15px;
   }
 
   .reasons__number {
     display: block;
-    margin-top: 15px;
+    margin-bottom: 23px;
   }
 
-  .reasons__slogan {
-    margin-top: 23px;
-    margin-bottom: 45px;
+
+.reasons__block {
+
+  background-color: #81b3d2;
+  color: @white;
+
+}
+.reasons__block--second {
+    display: flex;
+    flex-direction: column-reverse;
   }
+
+
+  .reasons__img {
+  vertical-align: middle;
 }
 
 .reasons__list {
@@ -55,30 +65,93 @@
   text-align: center;
   margin: 0;
   padding: 0;
+}
 
-  .reasons__block {
-    margin: 0;
-    padding: 0;
-    background-color: #eeeeee;
-    color: #000000;
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: @tablet-width) {
+  .reasons {
+    .reasons__header {
+      padding-top: 55px;
+      padding-bottom: 55px;
+      .reasons__description {
+        font-size: 21px;
+        margin-bottom: 40px;
+      }
+      .reasons__intro {
+        line-height: 26px;
+
+      }
+    }
 
     .reasons__title {
-      margin-top: 32px;
+      font-size: 21px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    .reasons__number {
+      margin: 0;
+      margin-bottom: 30px;
     }
 
     .reasons__slogan {
       margin: 0;
-      margin-top: 25px;
-      margin-bottom: 32px;
+    }
+
+    .reasons__block {
+      display: flex;
+      justify-content: space-between;
+      height: 257px;
       padding: 0;
     }
-  }
+    .reasons__block--second {
+        flex-direction: row;
+      }
 
-  .reasons__block--small {
-    padding: 25px;
+
+    .reasons__picture {
+      width: 510px;
+      .reasons__img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .reasons__inner {
+      flex-grow: 1;
+      width: 255px;
+      padding: 50px 38px;
+    }
+
+    .reasons__list {
+      display: flex;
+      justify-content: space-between;
+
+      .reasons__inner--other {
+        width: 33%;
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+    }
   }
 }
+@media (min-width: @desktop-width) {
+ .reasons {
 
-.reasons__img {
-  vertical-align: middle;
+  .reasons__picture {
+    width: 795px;
+
+  }
+
+  .reasons__inner {
+    width: 400px;
+    padding: 0 67px;
+    padding-top: 55px;
+    padding-bottom: 62px;
+
+ }
+}
 }
