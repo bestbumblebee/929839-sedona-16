@@ -1,7 +1,9 @@
 .photo-video {
   text-align: center;
-  padding: 0 18px;
+  padding: 0 25px;
   border-bottom: 1px solid #e5e5e5;
+  padding-top: 44px;
+  padding-bottom: 34px;
 
   .photo-video__title,
   .photo-video__slogan {
@@ -13,12 +15,28 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    margin-top: 45px;
+    margin-bottom: 40px;
   }
 
   .photo-video__slogan {
-    margin-bottom: 32px;
-    margin-top: 40px;
+
     line-height: 24px;
+  }
+}
+@media (min-width: @tablet-width) {
+  .photo-video {
+    padding: 0 170px;
+    padding-top: 78px;
+    padding-bottom: 76px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .photo-video {
+    padding: 0 385px;
+    padding-top: 115px;
+    padding-bottom: 79px;
+    .photo-video__title {
+      font-size: 30px;
+    }
   }
 }
