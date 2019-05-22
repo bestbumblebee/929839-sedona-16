@@ -3,11 +3,20 @@
   margin: 0;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+
   .logo {
     position: absolute;
     bottom: -28px;
     left: 50%;
     margin-left: -55px;
     z-index: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    height: 56px;
   }
 }

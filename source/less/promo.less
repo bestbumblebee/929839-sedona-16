@@ -13,3 +13,31 @@
     background-position: bottom;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .promo {
+    height: 520px;
+    background-size: 100% 100%;
+
+    &--inner {
+      height: 290px;
+
+      .promo-img {
+        width: 460px;
+        height: 78px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    &--inner {
+      height: 300px;
+
+      .promo-img {
+        width: 465px;
+      }
+    }
+  }
+}
