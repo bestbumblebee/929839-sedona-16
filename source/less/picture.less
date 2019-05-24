@@ -5,25 +5,30 @@
 }
 
 .picture {
-  .picture__img-title,
-  .picture__img-autor {
+  .picture__title,
+  .picture__autor {
     margin: 0;
     padding: 0;
   }
 
-  .picture__img-title {
+  .picture__title {
+    margin: 0;
+    padding: 0;
     line-height: 24px;
     font-weight: 700;
-    margin-left: 14px;
-    margin-top: 21px;
+    margin-bottom: 10px;
   }
 
-  .picture__img-autor {
+  .picture__autor {
     text-transform: none;
     line-height: 24px;
-    margin-left: 14px;
     margin-top: 16px;
   }
+}
+
+.picture__description {
+  margin: 0;
+  padding: 0;
 }
 
 .picture__like {
@@ -31,44 +36,83 @@
   margin-left: 14px;
 
   .picture__number {
+    margin: 0;
+    padding: 0;
     line-height: 24px;
     font-weight: 700;
-    margin-left: 35px;
   }
+}
+
+.picture__depiction {
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .picture {
+    .picture__autor {
+      margin-bottom: 22px;
+    }
+  }
+
+
+  .picture:nth-child(1) {
+    width: 100%;
+
+    .picture__img {
+      height: 400px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .picture:nth-child(2),
+  .picture:nth-child(3),
+  .picture:nth-child(4) {
+    width: 50%;
+
+    .picture__img {
+      height: 270px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .picture__depiction {
     background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 22px;
+    padding-right: 21px;
   }
+
+  .picture__title {
+    margin-top: 0;
+  }
+
 }
 
-.picture:nth-child(1) {
-  width: 100%;
 
-  .picture__img {
-    height: 400px;
-    width: 100%;
-    margin: 0;
-  }
-}
-
-.picture:nth-child(2),
-.picture:nth-child(3),
-.picture:nth-child(4) {
-  width: 50%;
-
-  .picture__img {
-    height: 270px;
-    width: 100%;
-    margin: 0;
-  }
-}
 
 @media (min-width: @desktop-width) {
   .picture:nth-child(2),
   .picture:nth-child(3),
   .picture:nth-child(4) {
     width: 33.3%;
+  }
+
+  .picture {
+    position: relative;
+
+  }
+
+  .picture__depiction--great {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #ffffff;
+      bottom: 0;
   }
 }

@@ -6,9 +6,31 @@
 
   .main-nav__toggle {
     position: absolute;
-    right: 20px;
-    bottom: 18px;
+    right: 15px;
+    top: 9px;
+    padding: 0;
+    margin: 0;
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/icon-menu.svg");
+}
+
+.main-nav--opened .main-nav__toggle {
+  z-index: 4;
+  background-image: url("../img/icon-cross.svg");
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
 }
 
 .main-nav__list {
@@ -25,10 +47,10 @@
 
   .main-list__item {
     padding: 0;
-    background-color: #81b3d2;
+
     text-align: center;
-    vertical-align: middle;
     border-bottom: 1px solid #678fa8;
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   }
 
   li:nth-child(2),
@@ -36,18 +58,85 @@
   li:nth-child(4) {
     border-top: 1px solid #9ac2db;
   }
+}
 
-  .main-nav__link {
-    color: @white;
+.main-nav__link {
+  display: block;
+  padding-top: 7px;
+  color: @white;
+  background-color: #81b3d2;
+  min-height: 55px;
+}
+
+.main-nav__link[href] {
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
   }
 }
+
+
 
 @media (min-width: @tablet-width) {
   .main-nav {
     max-height: 56px;
+    .main-nav__toggle {
+      display: none;
+    }
   }
 
   .main-nav__list {
-    display: none;
+    flex-direction: row;
+    border: none;
+    font-size: 14px;
+    line-height: 26px;
+    .main-list__item {
+      width: 20%;
+      border: none;
+    }
+    .main-list__item:nth-child(2),
+    .main-list__item:nth-child(6) {
+      margin-right: 10%;
+    }
+
+    .main-list__item:nth-child(3),
+    .main-list__item:nth-child(7) {
+      margin-left: 10%;
+    }
+  }
+
+  .main-nav__link {
+    color: #000000;
+    background-color: #ffffff;
+    padding-top: 12px;
+  }
+
+  .main-nav__link[href] {
+    &:focus,
+    &:hover {
+      color: #669ec0;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #ffffff;
+    }
+  }
+
+  .main-nav__link:not([href]) {
+    color: #766357;
+
+    &:focus,
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 }
