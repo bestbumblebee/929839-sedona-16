@@ -14,7 +14,10 @@
     <div class="container">
     <header class="header">
       <a class="logo">
-            <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта туристического городка Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта туристического городка Sedona">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -55,7 +58,11 @@
             <p class="reasons__slogan">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reasons__picture">
-            <img class="reasons__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="картинка городка Седона">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="reasons__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="картинка городка Седона">
+              </picture>
             </div>
           </div>
           <ul class="prefers">
@@ -74,7 +81,11 @@
           </ul>
           <div class="reasons__block reasons__block--second">
             <div class="reasons__picture">
-            <img class="reasons__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="картинка каньона">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <img class="reasons__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="картинка каньона">
+              </picture>
             </div>
             <div class="reasons__inner">
             <p class="reasons__title">Там есть мост дьявола</p>
@@ -99,21 +110,6 @@
               <span class="reasons__number">— №5 —</span>
               <p class="reasons__slogan">Большинство едет в гранд каньон и толпится там</p>
             </li>
-            <!-- <li class="reasons__block reasons__block--small">
-              <p class="reasons__title">Небольшая площадь</p>
-              <span class="reasons__number">— №3 —</span>
-              <p class="reasons__slogan">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="reasons__block reasons__block--small">
-              <p class="reasons__title">Красивая дорога</p>
-              <span class="reasons__number">— №4 —</span>
-              <p class="reasons__slogan">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="reasons__block reasons__block--small">
-              <p class="reasons__title">Мало туристов</p>
-              <span class="reasons__number">— №5 —</span>
-              <p class="reasons__slogan">Большинство едет в гранд каньон и толпится там</p>
-            </li> -->
           </ul>
 
       </section>
